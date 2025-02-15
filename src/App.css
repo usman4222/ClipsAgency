@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@theme {
+  --color-home: #080617; /* Custom color */
+  --font-logo: "PolySans Median", sans-serif; /* Custom font */
+}
+
+@keyframes pulseGradient {
+    0% {
+      background: radial-gradient(circle 15% at center, #A75CBD, #080617) !important;
+    }
+    50% {
+      background: radial-gradient(circle 25% at center, #A75CBD, #080617) !important;
+    }
+    100% {
+      background: radial-gradient(circle 15% at center, #A75CBD, #080617) !important;
+    }
+  }
+  
+  .hero-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    animation: pulseGradient 2s infinite ease-in-out;
+  }
+  

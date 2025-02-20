@@ -1,13 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{js,jsx,ts,tsx}"],
-    theme: {
-      extend: {
-        colors: {
-          homecolor: "#080617",
-        },
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        polysans: ["Polysans median", "sans-serif"],
+      },
+      colors: {
+        customColor: "#080617",
       },
     },
-    plugins: [],
-  };
-  
+  },
+  plugins: [],
+};
+
+
+
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        polysans: ["Polysans median", "sans-serif"],
+      },
+    },
+  },
+  plugins: [],
+};

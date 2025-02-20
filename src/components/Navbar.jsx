@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,9 +16,9 @@ const Navbar = () => {
             TheClipsAgency
           </span>
         </a>
-        <div className="flex items-center lg:order-2 ">
+        <div className="flex items-center lg:order-2">
           <a
-            href="https://themesberg.com/product/tailwind-css/landing-page"
+            href="/submit-form"
             className="text-black hidden md:block bg-[#F5D1FF] font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none"
           >
             Book a call
@@ -59,25 +60,71 @@ const Navbar = () => {
           id="mobile-menu-2"
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-            {["Home", "Solutions", "Portfolio", "Client Success"].map(
-              (item, index) => (
-                <li key={index}>
-                  <a
-                    href="#"
-                    className="block py-2 pl-3 pr-4 text-sm lg:text-md uppercase text-[#f1f1f1] border-b lg:border-0 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
-                  >
-                    {item}
-                  </a>
-                </li>
-              )
-            )}
-            <a
-              href="https://themesberg.com/product/tailwind-css/landing-page"
-              className="text-black bg-[#F5D1FF] font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none block md:hidden mt-6"
+            <li>
+              <a
+                href="/"
+                className="block py-2 pl-3 pr-4 text-sm lg:text-md uppercase text-[#f1f1f1] border-b lg:border-0 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              className="relative"
+              onMouseEnter={() => setIsDropdownOpen(true)}
+              onMouseLeave={() => setIsDropdownOpen(false)}
             >
-              Book a call
-            </a>
+              <a
+                href="#"
+                className="block py-2 pl-3 pr-4 text-sm lg:text-md uppercase text-[#f1f1f1] border-b lg:border-0 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              >
+                Solutions
+              </a>
+              {isDropdownOpen && (
+                <div className="absolute left-0 w-40 bg-[#F1F1F1]  text-black rounded-lg shadow-lg z-30 overflow-hidden">
+                  <a
+                    href="/ghosthost"
+                    className="block px-4 py-2 text-[#080617]  hover:bg-[#080617] hover:text-white transition-all ease-in m-1 rounded-lg"
+                  >
+                    GhostHost™
+                  </a>
+                  <a
+                    href="/credits"
+                    className="block px-4 py-2 text-[#080617] hover:bg-[#080617] hover:text-white transition-all ease-in m-1 rounded-lg"
+                  >
+                    Credits™
+                  </a>
+                  <a
+                    href="/powerpod"
+                    className="block px-4 py-2 text-[#080617] hover:bg-[#080617] hover:text-white transition-all ease-in m-1 rounded-lg"
+                  >
+                    PowerPod™
+                  </a>
+                </div>
+              )}
+            </li>
+            <li>
+              <a
+                href="/portfolio"
+                className="block py-2 pl-3 pr-4 text-sm lg:text-md uppercase text-[#f1f1f1] border-b lg:border-0 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a
+                href="/client-success"
+                className="block py-2 pl-3 pr-4 text-sm lg:text-md uppercase text-[#f1f1f1] border-b lg:border-0 hover:bg-gray-50 lg:hover:bg-transparent lg:p-0"
+              >
+                Client Success
+              </a>
+            </li>
           </ul>
+          <a
+            href="/submit-form"
+            className="text-black bg-[#F5D1FF] font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none block md:hidden mt-6"
+          >
+            Book a call
+          </a>
         </div>
       </div>
     </nav>

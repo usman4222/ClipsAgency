@@ -1,101 +1,4 @@
-/* @font-face {
-  font-family: 'Polysans median';
-  src: url('/path/to/font/Polysans-median.woff2') format('woff2'),
-       url('/path/to/font/Polysans-median.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
-
-@import "tailwindcss";
-/* @theme {
-  --color-home: #080617; 
-  --font-logo: "PolySans Median", sans-serif; 
-} */
-
-@keyframes pulseGradient {
-    0% {
-      background: radial-gradient(circle 15% at center, #A75CBD, #080617) !important;
-    }
-    50% {
-      background: radial-gradient(circle 25% at center, #A75CBD, #080617) !important;
-    }
-    100% {
-      background: radial-gradient(circle 15% at center, #A75CBD, #080617) !important;
-    }
-  }
-  
-  .hero-section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-size: cover;
-    animation: pulseGradient 2s infinite ease-in-out;
-  }
-  
-
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); /* Adjust for seamless looping */
-    }
-  }
-  
-  .carousel-items {
-    display: flex;
-    animation: scroll 20s linear infinite;
-  }
-  
-  .carousel-items.pause-animation {
-    animation-play-state: paused;
-  }
-  
-  .carousel-focus {
-    flex: 0 0 auto;
-  }
-  @media (min-width: 320px) { 
-    .carousel-focus {
-      width: 180px;
-    }
-  }
-
-  @media (min-width: 768px) { 
-    .carousel-focus {
-      width: 270px;
-    }
-  }
-
-/* .video{
-  border-radius: 50px;
-}
- */
-
-
-
-
-
-
- @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 2s ease-in forwards;
-}
-
-
-/* 
-  import React from "react";
+import React from "react";
 import { Plus } from "lucide-react";
 
 const SuccessStoryCard = ({
@@ -111,7 +14,9 @@ const SuccessStoryCard = ({
   return (
     <div className="bg-[#080617] px-4 py-6">
       <div className="bg-[#f5d1ff] rounded-3xl mx-auto max-w-4xl p-6 flex flex-col lg:flex-row gap-6">
+        {/* Left Content */}
         <div className="flex flex-col flex-1">
+          {/* Profile Section */}
           <div className="flex gap-5 items-center">
             <img
               src={imageSrc}
@@ -129,15 +34,18 @@ const SuccessStoryCard = ({
             </div>
           </div>
 
+          {/* Testimonial */}
           <blockquote className="text-[20px] md:text-[26px] lg:text-[30px] mt-8 md:mt-10 leading-[28px] md:leading-[33px] font-medium mb-12 md:mb-16 text-customColor">
             "{testimonialText}"
           </blockquote>
 
+          {/* Stats Section */}
           <div className="flex flex-col">
             <p className="text-sm text-[#080617]">
               Started with 2.5K Followers
             </p>
             <div className="flex gap-8 mt-6 md:mt-8">
+              {/* Followers Gained */}
               <div className="flex flex-col items-center">
                 <div className="rounded-full bg-[#e7fe54] w-fit p-2 mb-3">
                   <div className="rounded-full bg-black p-1">
@@ -152,6 +60,7 @@ const SuccessStoryCard = ({
                 </div>
               </div>
 
+              {/* View Count */}
               <div className="flex flex-col items-center">
                 <div className="rounded-full bg-[#e7fe54] w-fit p-2 mb-3">
                   <div className="rounded-full bg-black p-1">
@@ -182,10 +91,14 @@ const SuccessStoryCard = ({
                 </div>
               </div>
 
+              {/* <span className="hidden lg:block rounded-full mt-3 bg-[#e7fe54] px-3 py-1 w-fit text-sm font-semibold">
+                
+              </span> */}
             </div>
           </div>
         </div>
 
+        {/* Video Section */}
         <div className="hidden md:block w-full lg:w-[45%]">
           <div className="overflow-hidden rounded-3xl">
             <iframe
@@ -201,4 +114,4 @@ const SuccessStoryCard = ({
   );
 };
 
-export default SuccessStoryCard; */
+export default SuccessStoryCard;

@@ -12,11 +12,11 @@ import { motion } from "framer-motion";
 
 export default function Credits() {
   return (
-    <section className="relative min-h-[80vh] w-full overflow-hidden bg-[#080617]">
-      <div className="mx-auto flex flex-col items-center justify-center px-4 text-center sm:px-6 lg:px-8 mb-32">
+    <section className="relative min-h-[80vh] w-full overflow-hidden bg-[#080617] mt-24">
+      <div className="mx-auto flex flex-col items-center justify-center px-4 text-center sm:px-6 lg:px-8 mb-32 animate-gradient">
         {/* Animated Heading */}
         <motion.h2
-          className="mb-6 max-w-3xl text-2xl font-bold text-white sm:text-3xl md:text-[70px] leading-[78px] pt-20 pb-6"
+          className="mb-6 max-w-3xl text-2xl font-bold text-white sm:text-3xl md:text-[70px] md:leading-[78px] pt-20 pb-6"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }} 
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -40,7 +40,7 @@ export default function Credits() {
 
         {/* Animated Large Text */}
         <motion.h1
-          className="mb-6 text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-[528px] leading-[528px]"
+          className="mb-6 font-bold tracking-tight text-white  text-[25vw] leading-[528px]"
           initial={{ y: 50, opacity: 0 }} 
           whileInView={{ y: 0, opacity: 1 }} 
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }} 

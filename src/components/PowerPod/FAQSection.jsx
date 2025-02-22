@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import { Minus, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -48,25 +48,26 @@ export default function FAQSection() {
           {/* Left Column - Animated from Left */}
           <motion.div
             className="flex flex-col justify-between"
-            initial={{ x: -100, opacity: 0 }} 
-            whileInView={{ x: 0, opacity: 1 }} 
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }} 
+            viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Have More Questions?
             </h2>
             <div className="flex flex-col justify-between">
-              <p className="text-xl text-gray-300">
+              <p className="md:text-xl text-gray-300">
                 Need more information?
                 <br /> Book a 30 mins discovery call.
               </p>
               <span className="block">Book a 30 mins discovery call.</span>
-              <Link
-                href="#"
-                className="inline-block rounded-xl w-fit bg-[#d1f14c] px-6 py-3 text-lg font-medium text-black transition-colors hover:bg-[#d1f14c]/90"
-              >
-                Book a call
+              <Link to="/submit-form">
+                <button
+                  className="inline-block rounded-xl cursor-pointer w-fit bg-[#d1f14c] md:px-6 px-4 md:py-3 py-2 md:text-lg font-medium text-black transition-colors hover:bg-[#d1f14c]/90"
+                >
+                  Book a call
+                </button>
               </Link>
             </div>
           </motion.div>
@@ -74,16 +75,16 @@ export default function FAQSection() {
           {/* Right Column - Animated from Right */}
           <motion.div
             className="space-y-4"
-            initial={{ x: 100, opacity: 0 }} 
-            whileInView={{ x: 0, opacity: 1 }} 
-            transition={{ duration: 0.8, ease: "easeOut" }} 
-            viewport={{ once: true }} 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
           >
             {faqs.map((faq, index) => (
               <div key={index} className="border-b border-gray-800">
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="flex w-full items-center justify-between py-4 text-left text-[23px] leading-[28px] font-medium text-white  cursor-pointer"
+                  className="flex w-full items-center justify-between py-4 text-left md:text-[23px] leading-[28px] font-medium text-white  cursor-pointer"
                   aria-expanded={openIndex === index}
                   aria-controls={`faq-answer-${index}`}
                 >
@@ -105,7 +106,9 @@ export default function FAQSection() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="pb-4 text-[16px] leading-[24px] text-gray-400">{faq.answer}</p>
+                    <p className="pb-4 md:text-[16px] leading-[24px] text-gray-400">
+                      {faq.answer}
+                    </p>
                   </div>
                 </div>
               </div>

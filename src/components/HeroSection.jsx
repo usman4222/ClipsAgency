@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[60vh] overflow-hidden px-4 pt-24 pb-10 animate-gradient">
+    <section className="relative min-h-[60vh] overflow-hidden px-4 pt-24 pb-10 animate-gradient mt-24">
       {/* Gradient Background */}
       <div className="absolute inset-0" aria-hidden="true" />
 

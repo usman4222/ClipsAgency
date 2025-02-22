@@ -13,10 +13,10 @@ const GhostHost = () => {
   return (
     <>
       <div className="bg-[#080617]">
-        <div className="relative w-full h-fit md:h-auto overflow-hidden bg-[#080617]">
+        <div className="relative w-full h-fit md:h-auto overflow-hidden animate-gradient mt-24">
           {/* Background Text - GhostHost */}
           <motion.h1
-            className="absolute w-full text-center text-white md:text-[150px] lg:text-[200px] xl:text-[250px] 2xl:text-[384px] lg:leading-[307px] font-bold"
+            className="absolute w-full text-center text-white text-[19vw] font-bold"
             initial={{ y: "100%", opacity: 0 }} 
             whileInView={{ y: 0, opacity: 1 }} 
             transition={{ duration: 1, ease: "easeOut" }}
@@ -30,7 +30,7 @@ const GhostHost = () => {
             <img
               src="https://cdn.prod.website-files.com/67025756be96d71592e4ec7d/6750036db34d5c7c8475005c_GH6.png"
               alt="GhostHost"
-              className="relative z-10 hidden md:block max-w-[70%] md:max-w-[70%]"
+              className="relative z-10 max-w-[70%] md:max-w-[70%]"
             />
           </div>
 
@@ -42,11 +42,11 @@ const GhostHost = () => {
             transition={{ duration: 1, ease: "easeOut", delay: 0.5 }} 
             viewport={{ once: true }} 
           >
-            <h2 className="text-2xl font-bold text-white lg:text-[35px] xl:text-[45px] lg:leading-[50px]">
+            <h2 className="text-2xl font-bold text-white lg:text-[35px] xl:text-[45px] lg:leading-[50px] hidden md:block">
               Create 15 videos
               <span className="block"> in ±2 hours</span>
             </h2>
-            <p className="max-w-xl text-[13px] xl:text-lg text-white/90 mt-4">
+            <p className="max-w-xl text-[13px] xl:text-lg text-white/90 mt-4 hidden md:block">
               If you’re a busy entrepreneur looking to
               <span className="block">
                 put your content creation on autopilot,

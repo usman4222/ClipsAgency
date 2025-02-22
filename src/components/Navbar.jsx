@@ -9,9 +9,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#080617] py-2.5">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#080617] py-2.5">
       <div className="flex flex-wrap items-center justify-between mx-auto px-7 py-5">
-        <a href="#" className="flex items-center">
+        <a href="/" className="flex items-center">
           <span className="text-[25px] italic leading-[17px] font-bold text-[#fff] font-logo-font">
             TheClipsAgency
           </span>
@@ -59,7 +59,7 @@ const Navbar = () => {
           } items-center justify-between w-full lg:flex lg:w-auto lg:order-1`}
           id="mobile-menu-2"
         >
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 ">
             <li>
               <a
                 href="/"
@@ -80,10 +80,10 @@ const Navbar = () => {
                 Solutions
               </a>
               {isDropdownOpen && (
-                <div className="absolute left-0 w-40 bg-[#F1F1F1]  text-black rounded-lg shadow-lg z-30 overflow-hidden">
+                <div className="absolute left-0 w-40 bg-[#F1F1F1] text-black rounded-lg shadow-lg z-30 overflow-hidden">
                   <a
                     href="/ghosthost"
-                    className="block px-4 py-2 text-[#080617]  hover:bg-[#080617] hover:text-white transition-all ease-in m-1 rounded-lg"
+                    className="block px-4 py-2 text-[#080617] hover:bg-[#080617] hover:text-white transition-all ease-in m-1 rounded-lg"
                   >
                     GhostHost™
                   </a>

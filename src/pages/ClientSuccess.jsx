@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Play, X } from "lucide-react";
 import CaseStudyCard from "../components/CaseStudyCard";
 import TestimonialVideoCard from "../components/TestimonialVideoCard";
@@ -212,8 +212,12 @@ export default function ClientSuccess() {
   const [activeTab, setActiveTab] = useState("case-studies");
   const [activeVideo, setActiveVideo] = useState(null);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <section className="relative min-h-screen bg-[#080617]  px-4 py-16">
+    <section className="relative min-h-screen bg-[#080617]  px-4 py-16 mt-24">
       <div className="container mx-auto max-w-7xl text-center">
         <Heading
           title="Client Success"

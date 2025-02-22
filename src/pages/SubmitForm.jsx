@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion"; 
 
@@ -31,6 +31,9 @@ export default function SubmitForm() {
       };
     });
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,12 +42,12 @@ export default function SubmitForm() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a16] px-4 py-16 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#0a0a16] px-4 py-16 sm:px-6 lg:px-8 mt-24">
       <div className="mx-auto max-w-3xl border-yellow-400">
         <div className="text-center">
           {/* Animated Heading */}
           <motion.h1
-            className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-[55px] leading-[62px]"
+            className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-[55px] lg:leading-[62px]"
             initial={{ y: 50, opacity: 0 }} 
             whileInView={{ y: 0, opacity: 1 }} 
             transition={{ duration: 0.8, ease: "easeOut" }} 
@@ -55,7 +58,7 @@ export default function SubmitForm() {
 
           {/* Animated Paragraph */}
           <motion.p
-            className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-[55px] leading-[62px]"
+            className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-[55px] lg:leading-[62px]"
             initial={{ y: 50, opacity: 0 }} 
             whileInView={{ y: 0, opacity: 1 }} 
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} 

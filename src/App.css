@@ -203,20 +203,23 @@ const SuccessStoryCard = ({
 
 export default SuccessStoryCard; */
 
-.radial-gradient-bg {
-  background: radial-gradient(circle at center, #0062ff -10%, #ff0000);
-  animation: bloom 10s ease-in-out infinite; /* Apply bloom animation */
-}
-
-/* Bloom animation */
-@keyframes bloom {
+@keyframes gradientAnimation {
   0% {
-    background: radial-gradient(circle at center, #0062ff -10%, #ff0000);
+    background-size: 100% 100%;
+    background-position: center;
   }
   50% {
-    background: radial-gradient(circle at center, #0062ff 20%, #ff0000);
+    background-size: 150% 150%;
+    background-position: center;
   }
   100% {
-    background: radial-gradient(circle at center, #0062ff -10%, #ff0000);
+    background-size: 100% 100%;
+    background-position: center;
   }
+}
+
+.animate-gradient {
+  background: radial-gradient(circle, #A55ABD -30%, #080617 50%);
+  background-size: 100% 100%;
+  animation: gradientAnimation 15s ease-in-out infinite alternate;
 }

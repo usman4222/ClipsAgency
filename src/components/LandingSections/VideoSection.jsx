@@ -17,7 +17,7 @@ const VideoSection = () => {
                 <iframe
                     src="https://player.vimeo.com/video/1023694654?badge=0&autopause=0&player_id=0&app_id=58479"
                     alt="Dr Vivien Case Study"
-                    className="h-[650px] w-[100vw] object-cover rounded-lg"
+                    className="h-[650px] w-[250px] md:w-[100vw] object-cover rounded-lg"
                     allow="autoplay; fullscreen; picture-in-picture"
                     title="Dr Vivien Case Study"
                 />

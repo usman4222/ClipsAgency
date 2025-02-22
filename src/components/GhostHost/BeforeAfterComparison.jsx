@@ -34,14 +34,14 @@ const BeforeAfterComparison = () => {
 
       {/* Cards */}
       {comparisons.map((item, index) => (
-        <div key={index} className="flex flex-col sm:flex-row gap-6 mt-10">
+        <div key={index} className="flex  gap-6 mt-10">
           {/* Before Card */}
-          <div className="relative rounded-2xl shadow-lg overflow-hidden max-w-[280px] sm:max-w-[300px]">
+          <div className="relative rounded-2xl shadow-lg overflow-hidden max-w-[280px] sm:max-w-[300px] px-5">
             <img src={item.before} alt="Before" className="w-full h-auto" />
           </div>
 
           {/* After Card */}
-          <div className="relative rounded-2xl shadow-lg overflow-hidden max-w-[280px] sm:max-w-[300px]">
+          <div className="relative rounded-2xl shadow-lg overflow-hidden max-w-[280px] sm:max-w-[300px] px-5">
             <img src={item.after} alt="With Us" className="w-full h-auto" />
             {/* Overlay Text */}
             <h3 className="absolute top-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-bold">

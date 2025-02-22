@@ -1,12 +1,20 @@
+import React from "react";
+import { motion } from "framer-motion";
 import Box from "../../assets/package.gif";
 import Video from "../../assets/video.gif";
 
 export default function BrandingSection() {
   return (
-    <section className=" bg-[#080617] px-4 py-16 md:py-24">
+    <section className="bg-[#080617] px-4 py-16 md:py-24">
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
-        <div className="mb-20 text-center">
+        <motion.div
+          className="mb-20 text-center"
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }} 
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }} 
+        >
           <h1 className="mb-8 md:mb-6 text-4xl md:text-[61px] md:leading-[67px] font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
             Branding, Content &<br />
             Systems.
@@ -15,16 +23,21 @@ export default function BrandingSection() {
             What happens when a branding agency who is obsessed with systems and
             frameworks, decides to dive in the world content creation? you get
             the clips agency.
-          </p>s
-        </div>
+          </p>
+        </motion.div>
 
         {/* Features Grid */}
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           {/* Feature 1 */}
-          <div className="text-center">
+          <motion.div
+            className="text-center"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} 
+            viewport={{ once: true }} 
+          >
             <div className="mb-6 flex justify-center">
-              {/* <img src={Box} alt="img" className="w-32 h-32" /> */}
-              {/* <Box className="h-16 w-16 text-purple-400" strokeWidth={1} /> */}
+              <img src={Box} alt="Box" className="w-32 h-32" />
             </div>
             <h2 className="mb-4 text-xl font-bold text-white md:text-3xl">
               Nothing is unbranded
@@ -33,11 +46,18 @@ export default function BrandingSection() {
               In the world of branding, it's a runway. Will you sizzle and steal
               the show, or will you be lost in the background?
             </p>
-          </div>
+          </motion.div>
 
           {/* Feature 2 */}
-          <div className="text-center">
+          <motion.div
+            className="text-center"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+            viewport={{ once: true }} 
+          >
             <div className="mb-6 flex justify-center">
+              <img src={Video} alt="Video" className="w-32 h-32" />
             </div>
             <h2 className="mb-4 text-xl font-bold text-white md:text-3xl">
               Videos that drive engagements.
@@ -46,12 +66,18 @@ export default function BrandingSection() {
               Level up your online game with videos that don't just snag
               attention but set sparks flying in your audience.
             </p>
-          </div>
+          </motion.div>
 
           {/* Feature 3 */}
-          <div className="text-center">
+          <motion.div
+            className="text-center"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }} 
+            viewport={{ once: true }} 
+          >
             <div className="mb-6 flex justify-center">
-              {/* <Diamond className="h-16 w-16 text-purple-400" strokeWidth={1} /> */}
+              <img src={Box} alt="Box" className="w-32 h-32" />
             </div>
             <h2 className="mb-4 text-xl font-bold text-white md:text-3xl">
               Removing all the headaches.
@@ -61,7 +87,7 @@ export default function BrandingSection() {
               creation. Embrace a process that's all about doing more with less
               fuss.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

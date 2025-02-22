@@ -13,7 +13,7 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="bg-[#080617] leading-normal tracking-wide">
+    <div className=" leading-normal tracking-wide">
       <div className=" mx-auto w-full overflow-hidden relative">
         <div className="w-full h-full absolute">
           <div className="w-1/4 h-full absolute z-50 left-0"></div>

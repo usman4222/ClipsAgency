@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion"; 
 import { Minus, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -44,8 +45,14 @@ export default function FAQSection() {
     <section className="bg-[#080617] py-16 lg:py-24">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Left Column */}
-          <div className="flex flex-col justify-between">
+          {/* Left Column - Animated from Left */}
+          <motion.div
+            className="flex flex-col justify-between"
+            initial={{ x: -100, opacity: 0 }} 
+            whileInView={{ x: 0, opacity: 1 }} 
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }} 
+          >
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Have More Questions?
             </h2>
@@ -62,10 +69,16 @@ export default function FAQSection() {
                 Book a call
               </Link>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Right Column */}
-          <div className="space-y-4">
+          {/* Right Column - Animated from Right */}
+          <motion.div
+            className="space-y-4"
+            initial={{ x: 100, opacity: 0 }} 
+            whileInView={{ x: 0, opacity: 1 }} 
+            transition={{ duration: 0.8, ease: "easeOut" }} 
+            viewport={{ once: true }} 
+          >
             {faqs.map((faq, index) => (
               <div key={index} className="border-b border-gray-800">
                 <button
@@ -97,7 +110,7 @@ export default function FAQSection() {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

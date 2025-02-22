@@ -7,12 +7,13 @@ import CTASection from '../components/LandingSections/CATSection'
 import VideoSection from '../components/LandingSections/VideoSection'
 import StatsBar from '../components/LandingSections/StatsBar'
 import Carousel from '../components/LandingSections/Carousel'
+import RadialGradientShowcase from './RadialGradientAnimation'
 
 const LandingPage = () => {
   return (
     <div>
       <HeroSection/>
-      <Carousel/>
+      {/* <RadialGradientShowcase/> */}
       <VideoSection />
       <StatsBar/>
       <BrandingSection />

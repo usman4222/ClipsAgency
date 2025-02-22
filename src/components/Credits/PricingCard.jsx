@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion"; 
 
 export default function PricingCard() {
   const [selected, setSelected] = useState(45);
@@ -52,61 +53,117 @@ export default function PricingCard() {
   };
 
   return (
-    <div className="flex justify-center items-center bg-[#080617] ">
-      <div className="bg-[#F5D0FE] text-black rounded-2xl px-6 py-10 w-full max-w-2xl  shadow-lg mt-4">
-        <h2 className="text-[19px] leading-[21px] font-semibold text-center">
+    <motion.div
+      className="flex justify-center items-center bg-[#080617]"
+      initial={{ y: 50, opacity: 0 }} 
+      whileInView={{ y: 0, opacity: 1 }} 
+      transition={{ duration: 0.8, ease: "easeOut" }} 
+      viewport={{ once: true }} 
+    >
+      <div className="bg-[#F5D0FE] text-black rounded-2xl px-6 py-10 w-full max-w-2xl shadow-lg mt-4">
+        {/* Animated Heading */}
+        <motion.h2
+          className="text-[19px] leading-[21px] font-semibold text-center"
+          initial={{ y: 20, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }} 
+        >
           How many do you need?
-        </h2>
+        </motion.h2>
 
         {/* Selection Buttons */}
-        <div className="flex justify-center mt-4 space-x-6">
+        <motion.div
+          className="flex justify-center mt-4 space-x-6"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            visible: { transition: { staggerChildren: 0.1 } }, 
+          }}
+        >
           {Object.keys(pricingOptions).map((key) => (
-            <button
+            <motion.button
               key={key}
               onClick={() => setSelected(Number(key))}
               className={`relative px-4 py-2 text-[53px] leading-[60px] font-bold rounded-md transition-all cursor-pointer ${
                 selected === Number(key) ? "text-black" : "text-gray-500"
               }`}
+              variants={{
+                hidden: { y: 20, opacity: 0 }, 
+                visible: { y: 0, opacity: 1 }, 
+              }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               {key}
-              {/* {pricingOptions[key].discount && (
-                <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-purple-300 text-xs px-2 py-1 rounded-md">
-                  {pricingOptions[key].discount}
-                </span>
-              )} */}
-            </button>
+            </motion.button>
           ))}
-        </div>
+        </motion.div>
 
         {/* Features List */}
-        <ul className="mt-6 mb-8 space-y-2 text-center text-[15px] leading-[17px] font-medium">
+        <motion.ul
+          className="mt-6 mb-8 space-y-2 text-center text-[15px] leading-[17px] font-medium"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            visible: { transition: { staggerChildren: 0.1 } },
+          }}
+        >
           {pricingOptions[selected].features.map((feature, index) => (
-            <li key={index}>{feature}</li>
+            <motion.li
+              key={index}
+              variants={{
+                hidden: { y: 20, opacity: 0 }, 
+                visible: { y: 0, opacity: 1 }, 
+              }}
+              transition={{ duration: 0.8, ease: "easeOut" }} 
+            >
+              {feature}
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
 
         {/* Pricing */}
-        <div className="text-center mt-6 mb-10">
+        <motion.div
+          className="text-center mt-6 mb-10"
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }} 
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }} 
+          viewport={{ once: true }} 
+        >
           <p className="line-through text-gray-500 text-[22px] leading-[25px]">
             {pricingOptions[selected].originalPrice}
           </p>
           <p className="text-[38px] leading-[43px] font-bold">
             {pricingOptions[selected].discountedPrice}
           </p>
-        </div>
+        </motion.div>
 
         {/* Purchase Button */}
-        <div className="mt-6 flex justify-center">
+        <motion.div
+          className="mt-6 flex justify-center"
+          initial={{ y: 20, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }} 
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+          viewport={{ once: true }} 
+        >
           <button className="bg-[#E6FF57] text-black font-bold py-3 px-20 rounded-md">
             Purchase Credits
           </button>
-        </div>
+        </motion.div>
 
         {/* Validity Info */}
-        <p className="text-[17px] leading-[19px] text-gray-500 text-center mt-5">
+        <motion.p
+          className="text-[17px] leading-[19px] text-gray-500 text-center mt-5"
+          initial={{ y: 20, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }} 
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }} 
+          viewport={{ once: true }}
+        >
           5 Months Validity
-        </p>
+        </motion.p>
       </div>
-    </div>
+    </motion.div>
   );
 }

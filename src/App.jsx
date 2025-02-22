@@ -10,6 +10,7 @@ import PowerPod from "./pages/Solution/PowerPod";
 import SubmitForm from "./pages/SubmitForm";
 import Credits from "./pages/Solution/Credits";
 import GhostHost from "./pages/Solution/GhostHost";
+import RadialGradientShowcase from "./pages/RadialGradientAnimation";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/submit-form" element={<SubmitForm />} />
         <Route path="/credits" element={<Credits />} />
         <Route path="/ghosthost" element={<GhostHost />} />
+        <Route path="/host" element={<RadialGradientShowcase />} />
+
       </Routes>
       <Footer/>
     </>

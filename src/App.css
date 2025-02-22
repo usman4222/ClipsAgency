@@ -202,3 +202,21 @@ const SuccessStoryCard = ({
 };
 
 export default SuccessStoryCard; */
+
+.radial-gradient-bg {
+  background: radial-gradient(circle at center, #0062ff -10%, #ff0000);
+  animation: bloom 10s ease-in-out infinite; /* Apply bloom animation */
+}
+
+/* Bloom animation */
+@keyframes bloom {
+  0% {
+    background: radial-gradient(circle at center, #0062ff -10%, #ff0000);
+  }
+  50% {
+    background: radial-gradient(circle at center, #0062ff 20%, #ff0000);
+  }
+  100% {
+    background: radial-gradient(circle at center, #0062ff -10%, #ff0000);
+  }
+}

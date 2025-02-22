@@ -7,11 +7,11 @@ const TestimonialVideoCard = ({
   designation,
 }) => {
   return (
-    <div className=" bg-white rounded-3xl w-auto py-6">
+    <div className=" bg-white rounded-3xl w-auto py-2">
       <div className="flex flex-col justify-center items-center">
         <iframe
           src={videoUrl}
-          className="h-[250px] md:h-[350px] lg:h-[450px] w-auto rounded-3xl overflow-hidden object-cover video"
+          className=" rounded-3xl overflow-hidden object-cover"
           allowFullScreen
         />
 

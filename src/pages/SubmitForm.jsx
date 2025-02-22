@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { motion } from "framer-motion"; 
 
 export default function SubmitForm() {
   const [formData, setFormData] = useState({
@@ -41,14 +42,28 @@ export default function SubmitForm() {
     <div className="min-h-screen bg-[#0a0a16] px-4 py-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl border-yellow-400">
         <div className="text-center">
-          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-[55px] leading-[62px]">
+          {/* Animated Heading */}
+          <motion.h1
+            className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-[55px] leading-[62px]"
+            initial={{ y: 50, opacity: 0 }} 
+            whileInView={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 0.8, ease: "easeOut" }} 
+            viewport={{ once: true }}
+          >
             To Book Your Call,
-          </h1>
-          <p className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-[55px] leading-[62px]">
-            Please Answer A Few Questions.
-          </p>
-        </div>
+          </motion.h1>
 
+          {/* Animated Paragraph */}
+          <motion.p
+            className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-[55px] leading-[62px]"
+            initial={{ y: 50, opacity: 0 }} 
+            whileInView={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} 
+            viewport={{ once: true }} 
+          >
+            Please Answer A Few Questions.
+          </motion.p>
+        </div>
         <form
           onSubmit={handleSubmit}
           className="mt-12 space-y-8  px-10 py-5 rounded-xl shadow-2xl"

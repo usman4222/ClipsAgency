@@ -8,22 +8,46 @@ import SignatureVideoSection from "../../components/Credits/SignatureVideoSectio
 import { Heading } from "../../components/Heading";
 import FAQSection from "../../components/PowerPod/FAQSection";
 import Podcasts from "../../components/PowerPod/Podcasts";
+import { motion } from "framer-motion";
 
 export default function Credits() {
   return (
     <section className="relative min-h-[80vh] w-full overflow-hidden bg-[#080617]">
-      <div className="mx-auto flex  flex-col items-center justify-center px-4 text-center sm:px-6 lg:px-8 mb-32">
-        <h2 className="mb-6 max-w-3xl text-2xl font-bold text-white sm:text-3xl md:text-[70px] leading-[78px] pt-20 pb-6">
+      <div className="mx-auto flex flex-col items-center justify-center px-4 text-center sm:px-6 lg:px-8 mb-32">
+        {/* Animated Heading */}
+        <motion.h2
+          className="mb-6 max-w-3xl text-2xl font-bold text-white sm:text-3xl md:text-[70px] leading-[78px] pt-20 pb-6"
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }} 
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           Create your own
           <span className="block"> Video editing style</span>
-        </h2>
-        <p className="max-w-xl text-[27px] leading-[30px] text-white/90">
+        </motion.h2>
+
+        {/* Animated Paragraph */}
+        <motion.p
+          className="max-w-xl text-[27px] leading-[30px] text-white/90"
+          initial={{ y: 50, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} 
+          viewport={{ once: true }} 
+        >
           Stop copying other peoples styles.
           <span className="block"> It's time to have your own</span>
-        </p>
-        <h1 className="mb-6 text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-[528px] leading-[528px]">
+        </motion.p>
+
+        {/* Animated Large Text */}
+        <motion.h1
+          className="mb-6 text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-[528px] leading-[528px]"
+          initial={{ y: 50, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }} 
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }} 
+          viewport={{ once: true }}
+        >
           Credits
-        </h1>
+        </motion.h1>
       </div>
       <SignatureVideoSection />
       <BeforeAfterSection />
@@ -57,7 +81,7 @@ export default function Credits() {
         <img
           src="https://cdn.prod.website-files.com/67025756be96d71592e4ec7d/67556a267fa59365e2cd5e75_Book%20Comp_1_optimized.gif"
           alt="book"
-          className="w-[600px] bg-red-500"
+          className="w-[600px] "
         />
       </div>
       <p className=" text-center text-[27px] leading-[30px] text-white/90">

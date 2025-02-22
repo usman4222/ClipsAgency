@@ -1,11 +1,17 @@
-import React from "react"
-import { AiOutlinePlayCircle as Circle, AiOutlineAudio as Mic } from "react-icons/ai"
-import { TbWaveSine as WavyLine } from "react-icons/tb"
-
+import React from "react";
+import { motion } from "framer-motion"; 
+import { AiOutlinePlayCircle as Circle, AiOutlineAudio as Mic } from "react-icons/ai";
+import { TbWaveSine as WavyLine } from "react-icons/tb";
 
 function ServiceCard({ title, description, ctaText, icon }) {
     return (
-        <div className="flex h-full flex-col rounded-2xl bg-[#f5d1ff] hover:bg-[#F1F1F1] transition-all ease-in cursor-pointer p-8">
+        <motion.div
+            className="flex h-full flex-col rounded-2xl bg-[#f5d1ff] hover:bg-[#F1F1F1] transition-all ease-in cursor-pointer p-8"
+            initial={{ y: 50, opacity: 0 }} 
+            whileInView={{ y: 0, opacity: 1 }} 
+            transition={{ duration: 0.8, ease: "easeOut" }} 
+            viewport={{ once: true }} 
+        >
             <div className="mb-4 xl:mb-8 inline-flex h-15 w-15 md:h-20 md:w-20 items-center justify-center rounded-full bg-[#E6B3FF]">
                 {icon}
             </div>
@@ -14,8 +20,8 @@ function ServiceCard({ title, description, ctaText, icon }) {
             <button className="inline-flex w-fit items-center rounded-2xl bg-[#E7FE54] px-4 py-2 md:px-6 md:py-3 text-[15px]  md:text-[20px] leading-[26px] font-extrabold text-black transition-colors ">
                 {ctaText}
             </button>
-        </div>
-    )
+        </motion.div>
+    );
 }
 
 export default function ServiceCards() {
@@ -38,23 +44,39 @@ export default function ServiceCards() {
             ctaText: "Explore PowerPod™",
             icon: <Mic className="h-12 w-12 md:h-14 md:w-14 text-black" />,
         },
-    ]
+    ];
 
     return (
         <div className="bg-[#080617] px-4 pb-16 pt-16 md:pb-24">
-            <div className="w-full ">
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="w-full">
+                <motion.div
+                    className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={{
+                        visible: { transition: { staggerChildren: 0.2 } },
+                    }}
+                >
                     {services.map((service, index) => (
-                        <ServiceCard
+                        <motion.div
                             key={index}
-                            title={service.title}
-                            description={service.description}
-                            ctaText={service.ctaText}
-                            icon={service.icon}
-                        />
+                            variants={{
+                                hidden: { y: 50, opacity: 0 }, 
+                                visible: { y: 0, opacity: 1 },
+                            }}
+                            transition={{ duration: 0.8, ease: "easeOut" }} 
+                        >
+                            <ServiceCard
+                                title={service.title}
+                                description={service.description}
+                                ctaText={service.ctaText}
+                                icon={service.icon}
+                            />
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </div>
-    )
+    );
 }

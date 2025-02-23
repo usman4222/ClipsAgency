@@ -2,8 +2,8 @@ import React from "react";
 
 export default function VideoPost() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1a032a] to-[#6b2874] flex justify-center items-center p-4">
-      <div className="bg-[#F5D1FF] max-w-lg w-full rounded-3xl shadow-lg p-4">
+    <div className="min-h-screen bg-[#080617]  flex justify-center items-center p-4">
+      <div className="bg-[#F5D1FF] max-w-[600px] w-full rounded-3xl shadow-lg p-4">
         {/* User Info */}
         <div className="flex items-center gap-3 p-2">
           <div className="h-12 w-12 overflow-hidden rounded-full border-2 border-white/20">
@@ -22,11 +22,11 @@ export default function VideoPost() {
         {/* Video Content */}
         <div className="mt-3 rounded-xl overflow-hidden">
           <iframe
-            className="w-full aspect-video rounded-xl"
+            className="w-[700px] h-[340px] aspect-video rounded-xl border"
             src="https://i.vimeocdn.com/video/1946820624-d4c3a88cf20c3540f252a190089e8c66696cf194469110740efc46c0a7d56281-d?mw=600&mh=338"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
-          />
+          ></iframe>
         </div>
       </div>
     </div>

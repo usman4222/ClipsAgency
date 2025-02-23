@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Heading } from "../Heading";
 
 const ScrollAnimation = () => {
   useEffect(() => {

@@ -8,6 +8,7 @@ import CATSection from "../../components/LandingSections/CATSection";
 import FAQSection from "../../components/PowerPod/FAQSection";
 import FeatureCards from "../../components/GhostHost/FeatureCards";
 import { motion } from "framer-motion"; 
+import AnimatedSection from "../AnimatedSection";
 
 const GhostHost = () => {
   return (
@@ -55,6 +56,8 @@ const GhostHost = () => {
             </p>
           </motion.div>
         </div>
+
+        {/* <AnimatedSection/> */}
 
         <Heading
           title={

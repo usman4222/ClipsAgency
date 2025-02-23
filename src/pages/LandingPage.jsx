@@ -15,7 +15,7 @@ const LandingPage = () => {
       <StatsBar/>
       <BrandingSection />
       <SolutionSection />
-      <SuccessStoriesSection />
+      {/* <SuccessStoriesSection /> */}
       <CTASection />
     </div>
   )

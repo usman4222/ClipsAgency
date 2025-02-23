@@ -3,7 +3,6 @@ import { Play, X } from "lucide-react";
 import CaseStudyCard from "../components/CaseStudyCard";
 import TestimonialVideoCard from "../components/TestimonialVideoCard";
 import { Heading } from "../components/Heading";
-import VideoGrid from "./Solution/VideoGrid";
 
 const testimonials = [
   {
@@ -22,7 +21,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522868-aa7a355ef04cb4e9b58a8d2faf41e948cf3da68725587725e23120d91ded7d06-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 3,
@@ -31,7 +30,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522902-bfebdf8d3f9f7a2cd92d4a118d11f9c9c2bc696599072fd2b0bab244d19499ec-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 4,
@@ -40,7 +39,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522967-f52088720d2627088e2dcf9ea0a08406fff1efe1ed96da0ec51bd23e6afcd3cf-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 5,
@@ -49,7 +48,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773523071-5a3b2779a5d2b45e55eaae8a4d8daf96ae4e30a06b28e278faeaa4cb9a893ac7-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 6,
@@ -58,7 +57,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522967-f52088720d2627088e2dcf9ea0a08406fff1efe1ed96da0ec51bd23e6afcd3cf-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 7,
@@ -67,7 +66,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522967-f52088720d2627088e2dcf9ea0a08406fff1efe1ed96da0ec51bd23e6afcd3cf-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 8,
@@ -76,7 +75,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522967-f52088720d2627088e2dcf9ea0a08406fff1efe1ed96da0ec51bd23e6afcd3cf-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 9,
@@ -85,7 +84,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522967-f52088720d2627088e2dcf9ea0a08406fff1efe1ed96da0ec51bd23e6afcd3cf-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 10,
@@ -94,7 +93,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522967-f52088720d2627088e2dcf9ea0a08406fff1efe1ed96da0ec51bd23e6afcd3cf-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 11,
@@ -103,7 +102,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522967-f52088720d2627088e2dcf9ea0a08406fff1efe1ed96da0ec51bd23e6afcd3cf-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 12,
@@ -112,7 +111,7 @@ const testimonials = [
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",
     videoUrl:
-      "https://i.vimeocdn.com/video/1773522967-f52088720d2627088e2dcf9ea0a08406fff1efe1ed96da0ec51bd23e6afcd3cf-d?mw=300&mh=533",
+      "https://player.vimeo.com/video/1019832195?badge=0&autopause=0&player_id=0&app_id=58479",
   },
 ];
 
@@ -224,10 +223,10 @@ export default function ClientSuccess() {
           description="See what our clients have to say or explore our case studies."
         />
         {/* Toggle Buttons */}
-        <div className="my-16 flex md:flex-row flex-col justify-center gap-4">
+        <div className="my-16 flex md:flex-row flex-col items-center justify-center gap-4">
           <button
             onClick={() => setActiveTab("case-studies")}
-            className={`rounded-2xl px-12 py-3 text-sm font-semibold cursor-pointer ${
+            className={`rounded-2xl w-fit px-6 md:px-12 py-3 text-sm font-semibold cursor-pointer ${
               activeTab === "case-studies" ? "bg-[#E7FE54]" : "bg-white"
             }`}
           >
@@ -235,7 +234,7 @@ export default function ClientSuccess() {
           </button>
           <button
             onClick={() => setActiveTab("testimonials")}
-            className={`rounded-2xl  px-12 py-3 text-sm font-semibold cursor-pointer ${
+            className={`rounded-2xl w-fit px-6 md:px-12 py-3 text-sm font-semibold cursor-pointer ${
               activeTab === "testimonials" ? "bg-[#E7FE54]" : "bg-white"
             }`}
           >
@@ -245,17 +244,18 @@ export default function ClientSuccess() {
 
         {/* Content */}
         {activeTab === "testimonials" ? (
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {testimonials.map((testimonial) => (
-              <TestimonialVideoCard
-                key={testimonial.id}
-                name={testimonial.name}
-                designation={testimonial.designation}
-                profileImage={testimonial.profileImage}
-                videoUrl={testimonial.videoUrl}
-              />
-            ))}
-            {/* <VideoGrid/> */}
+          <div className="flex justify-center items-center">
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {testimonials.map((testimonial) => (
+                <TestimonialVideoCard
+                  key={testimonial.id}
+                  name={testimonial.name}
+                  designation={testimonial.designation}
+                  profileImage={testimonial.profileImage}
+                  videoUrl={testimonial.videoUrl}
+                />
+              ))}
+            </div>
           </div>
         ) : (
           <div className="flex flex-col items-center gap-6">

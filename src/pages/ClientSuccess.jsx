@@ -25,7 +25,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Abelardo Bandeira",
+    name: "Abelardo",
     designation: "Entrepreneur",
     profileImage:
       "https://cdn.prod.website-files.com/67025756be96d71592e4ec86/671f791d42d2dabfa806b1ff_Abe.jpg",

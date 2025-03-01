@@ -46,7 +46,7 @@ export default function Podcasts() {
 
   return (
     <div className="min-h-screen bg-[#080617] px-4 py-16">
-      <div className="mx-auto px-5 md:px-32 space-y-8">
+      <div className="mx-auto  md:px-32 md:space-y-8 flex flex-col justify-center items-center">
         {/* Unified Grid - 4 on top, 4 on bottom */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {content.map((item, index) => (
@@ -57,7 +57,7 @@ export default function Podcasts() {
               <img
                 src={item.image}
                 alt="img"
-                className="h-full w-[300px] object-cover rounded-2xl"
+                className="h-full md:w-[300px] object-cover rounded-2xl"
               />
             </div>
           ))}
@@ -66,7 +66,7 @@ export default function Podcasts() {
         {/* Button */}
         <div className="flex justify-center pb-20 bg-[#080617] mt-32">
           <Link to="/portfolio">
-            <button className="rounded-2xl bg-[#f5d1ff] px-6 py-2 md:px-8 md:py-3 text-[12px] font-semibold text-gray-900 transition-colors hover:bg-purple-300 md:text-lg cursor-pointer">
+            <button className="rounded-2xl bg-[#f5d1ff] px-6 md:px-8 py-3 text-[12px] font-semibold text-gray-900 transition-colors hover:bg-purple-300 md:text-lg cursor-pointer">
               Explore More of Our Portfolio
             </button>
           </Link>

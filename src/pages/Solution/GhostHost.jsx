@@ -66,7 +66,7 @@ const GhostHost = () => {
           }
           description={
             <>
-              Start showing up like a professional and gain <br /> more
+              Start showing up like a professional and gain <br className="md:block hidden" /> more
               visibility and credibility.
             </>
           }

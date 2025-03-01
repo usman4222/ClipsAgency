@@ -27,7 +27,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="#"
+                    href="/ghosthost"
                     className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
                   >
                     GhostHost™
@@ -35,7 +35,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/credits"
                     className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
                   >
                     Credits™
@@ -43,7 +43,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/powerpod"
                     className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
                   >
                     PowerPod™
@@ -104,7 +104,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="#"
+                    href="/submit-form"
                     className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
                   >
                     Book a Call
@@ -147,7 +147,7 @@ export default function Footer() {
             <div className="block md:hidden">
               <div className="flex items-center space-x-4">
                 <Link
-                  href="/privacy"
+                  href="#"
                   className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
                 >
                   Privacy Policy
@@ -165,7 +165,7 @@ export default function Footer() {
           <div className="hidden md:block">
             <div className="flex items-center space-x-4">
               <Link
-                href="/privacy"
+                href="/#"
                 className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
               >
                 Privacy Policy

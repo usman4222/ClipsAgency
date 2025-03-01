@@ -83,7 +83,7 @@ const PricingTable = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="bg-white rounded-lg shadow-lg w-full max-w-3xl p-6 relative"
+            className="bg-white rounded-lg shadow-lg w-full h-[200px] md:h-auto md:max-w-3xl p-6 relative"
           >
             <button
               className="absolute top-4 right-4 text-gray-700 hover:text-black cursor-pointer"
@@ -91,18 +91,18 @@ const PricingTable = () => {
             >
               ✖
             </button>
-            <div className="flex gap-4">
+            <div className="flex items-center md:gap-4">
               <img
                 src={selectedPlan.image}
                 alt={selectedPlan.title}
-                className=" rounded-lg"
+                className=" rounded-lg hidden md:block"
               />
-              <div className="flex justify-center items-center px-10">
+              <div className="flex justify-center items-center px-5 md:px-10">
                 <div>
-                  <h2 className="text-[27px] leading-[33px] font-bold">
+                  <h2 className="text-[17px] md:text-[27px] md:leading-[33px] font-bold">
                     {selectedPlan.title}
                   </h2>
-                  <p className="text-black font-semibold mt-4 text-[15px] leading-[17px]">
+                  <p className="text-black font-semibold mt-4 text-[12px] md:text-[15px] leading-[17px]">
                     {selectedPlan.description}
                   </p>
                 </div>

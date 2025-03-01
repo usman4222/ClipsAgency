@@ -15,7 +15,7 @@ export default function SignatureVideoSection() {
           <h1 className="mb-8 md:mb-6 text-4xl md:text-[61px] md:leading-[67px] font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
             Stand out with <br /> signature videos
           </h1>
-          <p className="mx-auto max-w-3xl text-base text-gray-400 md:text-lg">
+          <p className="mx-auto max-w-3xl text-base text-gray-400 md:text-lg px-5">
             Everyone’s videos look the same. Except yours. Because you’re not
             like everyone else. You’re not average.
           </p>

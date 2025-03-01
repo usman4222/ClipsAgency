@@ -23,7 +23,7 @@ export default function Credits() {
           viewport={{ once: true }}
         >
           Create your own
-          <span className="block"> Video editing style</span>
+          <span className="md:block"> Video editing style</span>
         </motion.h2>
 
         {/* Animated Paragraph */}
@@ -35,12 +35,12 @@ export default function Credits() {
           viewport={{ once: true }} 
         >
           Stop copying other peoples styles.
-          <span className="block"> It's time to have your own</span>
+          <span className="md:block"> It's time to have your own</span>
         </motion.p>
 
         {/* Animated Large Text */}
         <motion.h1
-          className="mb-6 font-bold tracking-tight text-white  text-[25vw] leading-[528px]"
+          className="md:mb-6 font-bold tracking-tight text-white  text-[25vw] leading-[328px] md:leading-[528px]"
           initial={{ y: 50, opacity: 0 }} 
           whileInView={{ y: 0, opacity: 1 }} 
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }} 
@@ -84,15 +84,15 @@ export default function Credits() {
           className="w-[600px] "
         />
       </div>
-      <p className=" text-center text-[27px] leading-[30px] text-white/90">
+      <p className=" text-center px-4 md:text-[27px] leading-[30px] text-white/90">
         When you partner with us, you’ll receive a complimentary Signature
         Branding Exercise—
-        <span className="block">
+        <span className="md:block">
           {" "}
           valued at $5,000—designed exclusively for you. It’s our way of
           ensuring your videos not
         </span>
-        <span className="block">
+        <span className="md:block">
           {" "}
           only stand out but also stay true to your unique brand.
         </span>

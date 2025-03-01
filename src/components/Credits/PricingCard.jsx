@@ -54,13 +54,13 @@ export default function PricingCard() {
 
   return (
     <motion.div
-      className="flex justify-center items-center bg-[#080617]"
+      className="flex justify-center items-center bg-[#080617] px-3 md:px-0"
       initial={{ y: 50, opacity: 0 }} 
       whileInView={{ y: 0, opacity: 1 }} 
       transition={{ duration: 0.8, ease: "easeOut" }} 
       viewport={{ once: true }} 
     >
-      <div className="bg-[#F5D0FE] text-black rounded-2xl px-6 py-10 w-full max-w-2xl shadow-lg mt-4">
+      <div className="bg-[#F5D0FE] text-black rounded-2xl px-6 py-10 w-full md:max-w-2xl shadow-lg mt-4">
         {/* Animated Heading */}
         <motion.h2
           className="text-[19px] leading-[21px] font-semibold text-center"
@@ -74,7 +74,7 @@ export default function PricingCard() {
 
         {/* Selection Buttons */}
         <motion.div
-          className="flex justify-center mt-4 space-x-6"
+          className="flex justify-center mt-4 space-x-2 md:space-x-6"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -86,7 +86,7 @@ export default function PricingCard() {
             <motion.button
               key={key}
               onClick={() => setSelected(Number(key))}
-              className={`relative px-4 py-2 text-[53px] leading-[60px] font-bold rounded-md transition-all cursor-pointer ${
+              className={`relative px-4 py-2 text-[33px] md:text-[53px] leading-[60px] font-bold rounded-md transition-all cursor-pointer ${
                 selected === Number(key) ? "text-black" : "text-gray-500"
               }`}
               variants={{
@@ -132,10 +132,10 @@ export default function PricingCard() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }} 
           viewport={{ once: true }} 
         >
-          <p className="line-through text-gray-500 text-[22px] leading-[25px]">
+          <p className="line-through text-gray-500 text-[15px] md:text-[22px] leading-[25px]">
             {pricingOptions[selected].originalPrice}
           </p>
-          <p className="text-[38px] leading-[43px] font-bold">
+          <p className="text-[28px] md:text-[38px] leading-[43px] font-bold">
             {pricingOptions[selected].discountedPrice}
           </p>
         </motion.div>
@@ -148,7 +148,7 @@ export default function PricingCard() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
           viewport={{ once: true }} 
         >
-          <button className="bg-[#E6FF57] text-black font-bold py-3 px-20 rounded-md">
+          <button className="bg-[#E6FF57] text-black font-bold py-3 px-10 md:px-20 rounded-md">
             Purchase Credits
           </button>
         </motion.div>

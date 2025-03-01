@@ -66,7 +66,7 @@ export default function Podcasts() {
         {/* Button */}
         <div className="flex justify-center pb-20 bg-[#080617] mt-32">
           <Link to="/portfolio">
-            <button className="rounded-2xl bg-[#f5d1ff] px-6 py-2 md:px-8 md:py-3 text-base font-semibold text-gray-900 transition-colors hover:bg-purple-300 md:text-lg cursor-pointer">
+            <button className="rounded-2xl bg-[#f5d1ff] px-6 py-2 md:px-8 md:py-3 text-[12px] font-semibold text-gray-900 transition-colors hover:bg-purple-300 md:text-lg cursor-pointer">
               Explore More of Our Portfolio
             </button>
           </Link>

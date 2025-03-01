@@ -39,12 +39,12 @@ const RemoteRecording = () => {
           </>
         }
       />
-      <div className="flex justify-center items-center">
-        <div className="container flex flex-wrap justify-between gap-6 p-6">
+      <div className="flex justify-center items-center ">
+        <div className="container flex flex-wrap justify-between gap-6 p-6   ">
           {cards.map((card, index) => (
             <div
               key={index}
-              className=" text-white overflow-hidden shadow-lg  transition-transform transform hover:scale-105"
+              className=" text-white overflow-hidden shadow-lg  transition-transform transform hover:scale-105 w-full md:w-auto flex md:block flex-col items-center"
             >
               <img
                 src={card.image}

@@ -60,7 +60,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="#"
+                    href="/"
                     className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
                   >
                     What We Do
@@ -68,7 +68,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/portfolio"
                     className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
                   >
                     Our Work
@@ -76,7 +76,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/client-success"
                     className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
                   >
                     Client Success

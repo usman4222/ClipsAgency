@@ -43,7 +43,7 @@ export default function CaseStudyCard({
 
           {/* Stats */}
           <div className="flex flex-col gap-6">
-            <p className="text-gray-700 text-left text-[23px] leading-[26px] font-medium">
+            <p className="text-gray-700 text-left mt-3 text-[23px] leading-[26px] font-medium">
               Started with {initialFollowers} Followers
             </p>
             <div className="flex md:gap-32 gap-14 mt-10">

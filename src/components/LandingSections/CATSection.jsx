@@ -11,7 +11,7 @@ export default function CTASection() {
       <div className="absolute inset-0 bg-[#080617]" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl text-center">
+      <div className="relative z-10 mx-auto max-w-4xl text-center mb-32">
         {/* Animated Paragraph */}
         <motion.p
           className="mb-6 text-base text-gray-200 md:text-lg"

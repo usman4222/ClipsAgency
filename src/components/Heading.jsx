@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // Import Framer Motion
 
 export const Heading = ({ title, description }) => {
     return (
-        <section className="bg-[#080617] px-4 pt-10">
+        <section className="px-4 pt-10">
             <div className="container mx-auto max-w-4xl text-center">
                 {/* Animated Title */}
                 <motion.h2

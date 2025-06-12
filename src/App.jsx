@@ -10,6 +10,7 @@ import PowerPod from "./pages/Solution/PowerPod";
 import SubmitForm from "./pages/SubmitForm";
 import Credits from "./pages/Solution/Credits";
 import GhostHost from "./pages/Solution/GhostHost";
+import Careers from "./pages/Careers";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/submit-form" element={<SubmitForm />} />
         <Route path="/credits" element={<Credits />} />
         <Route path="/ghosthost" element={<GhostHost />} />
+        <Route path="/careers" element={<Careers />} />
 
       </Routes>
       <Footer/>

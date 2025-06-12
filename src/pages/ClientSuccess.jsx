@@ -342,8 +342,8 @@ export default function ClientSuccess() {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-[#080617]  px-4 py-16 mt-24">
-      <div className="container mx-auto max-w-7xl text-center">
+    <section className="relative min-h-screen bg-[#080617]  px-4 py-16 mt-24 ">
+      <div className="container mx-auto max-w-7xl text-center ">
         <Heading
           title="Client Success"
           description="See what our clients have to say or explore our case studies."
@@ -368,7 +368,7 @@ export default function ClientSuccess() {
 
         {/* Content */}
         {activeTab === "testimonials" ? (
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center ">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {testimonials.map((testimonial) => (
                 <TestimonialVideoCard

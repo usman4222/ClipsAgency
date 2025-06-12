@@ -82,9 +82,9 @@ export default function Footer() {
                     Client Success
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
-                    href="#"
+                    href="/careers"
                     className="text-gray-600 hover:text-[#080617] font-medium leading-[17px] text-[13px] lg:text-[15px] xl:text-[17px]"
                   >
                     Careers{" "}
@@ -92,7 +92,7 @@ export default function Footer() {
                       Now Hiring
                     </span>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -162,7 +162,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <div className="flex items-center space-x-4">
               <Link
                 href="/#"
@@ -178,7 +178,7 @@ export default function Footer() {
                 <span className="sr-only">WhatsApp</span>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

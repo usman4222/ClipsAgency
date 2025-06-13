@@ -18,7 +18,7 @@ function ServiceCard({ title, description, ctaText, ctaLink, icon }) {
             <h2 className="mb-4 text-[30px] md:text-[40px] leading-[34px] md:leading-[44px] font-extrabold tracking-tight text-gray-900 lg:text-[40px] whitespace-pre-line" dangerouslySetInnerHTML={{ __html: title }}></h2>
             <p className="mb-8 flex-1 text-[15px] xl:text-lg text-black ">{description}</p>
             {/* Button with Link */}
-            <a href={ctaLink} target="_blank" rel="noopener noreferrer">
+            <a href={ctaLink} rel="noopener noreferrer">
                 <button className="inline-flex w-fit items-center rounded-2xl cursor-pointer bg-[#E7FE54] px-4 py-2 md:px-6 md:py-3 text-[15px]  md:text-[20px] leading-[26px] font-extrabold text-black transition-colors ">
                     {ctaText}
                 </button>

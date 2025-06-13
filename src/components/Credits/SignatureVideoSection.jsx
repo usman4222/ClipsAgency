@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import circle from './../../assets/git4.gif'
 export default function SignatureVideoSection() {
   return (
     <section className="bg-[#080617] px-4 py-16 md:py-24">
@@ -7,10 +7,10 @@ export default function SignatureVideoSection() {
         {/* Header */}
         <motion.div
           className="mb-20 text-center"
-          initial={{ y: 50, opacity: 0 }} 
+          initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }} 
+          viewport={{ once: true }}
         >
           <h1 className="mb-8 md:mb-6 text-4xl md:text-[61px] md:leading-[67px] font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
             Stand out with <br /> signature videos
@@ -28,21 +28,20 @@ export default function SignatureVideoSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={{
-            visible: { transition: { staggerChildren: 0.2 } }, 
+            visible: { transition: { staggerChildren: 0.2 } },
           }}
         >
           {/* Feature 1 */}
           <motion.div
             className="text-center"
             variants={{
-              hidden: { y: 50, opacity: 0 }, 
+              hidden: { y: 50, opacity: 0 },
               visible: { y: 0, opacity: 1 },
             }}
-            transition={{ duration: 0.8, ease: "easeOut" }} 
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="mb-6 flex justify-center">
-              {/* <img src={Box} alt="img" className="w-32 h-32" /> */}
-              {/* <Box className="h-16 w-16 text-purple-400" strokeWidth={1} /> */}
+              <img src={circle} alt="img" className="w-32 h-32" />
             </div>
             <h2 className="mb-4 text-xl font-bold text-white md:text-3xl">
               Start showing up differently
@@ -57,12 +56,14 @@ export default function SignatureVideoSection() {
           <motion.div
             className="text-center"
             variants={{
-              hidden: { y: 50, opacity: 0 }, 
-              visible: { y: 0, opacity: 1 }, 
+              hidden: { y: 50, opacity: 0 },
+              visible: { y: 0, opacity: 1 },
             }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} 
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
-            <div className="mb-6 flex justify-center"></div>
+            <div className="mb-6 flex justify-center">
+              <img src={circle} alt="img" className="w-32 h-32" />
+            </div>
             <h2 className="mb-4 text-xl font-bold text-white md:text-3xl">
               Work with an expert team you can trust.
             </h2>
@@ -76,13 +77,13 @@ export default function SignatureVideoSection() {
           <motion.div
             className="text-center"
             variants={{
-              hidden: { y: 50, opacity: 0 }, 
-              visible: { y: 0, opacity: 1 }, 
+              hidden: { y: 50, opacity: 0 },
+              visible: { y: 0, opacity: 1 },
             }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           >
             <div className="mb-6 flex justify-center">
-              {/* <Diamond className="h-16 w-16 text-purple-400" strokeWidth={1} /> */}
+              <img src={circle} alt="img" className="w-32 h-32" />
             </div>
             <h2 className="mb-4 text-xl font-bold text-white md:text-3xl">
               No more editing and feedback headaches.

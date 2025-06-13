@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Box from "../../assets/package.gif";
-import Video from "../../assets/video.gif";
+import Box from "../../assets/gif3.gif";
+import video from "../../assets/gif2.gif";
+import rocket from "../../assets/gif1.gif";
 
 export default function BrandingSection() {
   return (
@@ -57,7 +58,7 @@ export default function BrandingSection() {
             viewport={{ once: true }} 
           >
             <div className="mb-6 flex justify-center">
-              <img src={Video} alt="Video" className="w-32 h-32" />
+              <img src={video} alt="Video" className="w-32 h-32" />
             </div>
             <h2 className="mb-4 text-xl font-bold text-white md:text-3xl">
               Videos that drive engagements.
@@ -77,7 +78,7 @@ export default function BrandingSection() {
             viewport={{ once: true }} 
           >
             <div className="mb-6 flex justify-center">
-              <img src={Box} alt="Box" className="w-32 h-32" />
+              <img src={rocket} alt="Box" className="w-32 h-32" />
             </div>
             <h2 className="mb-4 text-xl font-bold text-white md:text-3xl">
               Removing all the headaches.

@@ -10,10 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#080617] py-2.5">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#080617] ">
       <div className="flex flex-wrap items-center justify-between mx-auto px-7 py-5">
         <a href="/">
-          <img src={logo} alt="logo" className="w-10 " />
+          <img src={logo} alt="logo" className="w-12 " />
         </a>
         <div className="flex items-center lg:order-2">
           <a

@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
+import logo from '../assets/comp_logo.png'
+
 
 export default function Footer() {
   return (
@@ -10,11 +12,9 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between">
           {/* Logo Section */}
           <div className=" w-full lg:w-3/4 mb-14 md:mb-10 md:p-4 lg:text-left">
-            <Link href="/" className="inline-block">
-              <h2 className="xl:text-3xl text-2xl font-bold italic text-[#080617]">
-                TheClipsAgency
-              </h2>
-            </Link>
+            <a href="/">
+              <img src={logo} alt="logo" className="w-20 " />
+            </a>
           </div>
 
           {/* Links Section */}
@@ -137,11 +137,11 @@ export default function Footer() {
               </Link>
             </div>
             <h6 className=" text-left text-[#080617] max-w-md text-xs md:text-[14px] lg:text-[15px] leading-[17px] font-semibold">
-              The Clips Agency© 2024 All Rights Reserved
+              The IR Media Agency© 2025 All Rights Reserved
             </h6>
             <p className="max-w-md text-xs text-[#080617] text-left">
               All content and materials on this site are protected by copyright
-              and trademark laws and are the property of The Clips Agency.
+              and trademark laws and are the property of The IR Media Agency.
               Unauthorized use is prohibited.
             </p>
             <div className="block md:hidden">

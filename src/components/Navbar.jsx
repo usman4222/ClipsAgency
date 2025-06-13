@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from '../assets/comp_logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +12,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#080617] py-2.5">
       <div className="flex flex-wrap items-center justify-between mx-auto px-7 py-5">
-        <a href="/" className="flex items-center">
-          <span className="text-[25px] italic leading-[17px] font-bold text-[#fff] font-logo-font">
-            TheClipsAgency
-          </span>
+        <a href="/">
+          <img src={logo} alt="logo" className="w-16 " />
         </a>
         <div className="flex items-center lg:order-2">
           <a
@@ -54,9 +53,8 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } items-center justify-between w-full lg:flex lg:w-auto lg:order-1`}
+          className={`${isOpen ? "block" : "hidden"
+            } items-center justify-between w-full lg:flex lg:w-auto lg:order-1`}
           id="mobile-menu-2"
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 ">

@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0" aria-hidden="true" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-5xl text-center">
+      <div className="relative z-10 mx-auto max-w-5xl text-center mt-10">
         <motion.h1
           className="mb-6 text-4xl font-bold leading-tight tracking-tight text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.25)] md:text-5xl lg:text-6xl xl:text-7xl"
           initial={{ y: 100, opacity: 0 }}

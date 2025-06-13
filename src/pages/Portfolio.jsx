@@ -335,23 +335,25 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className=" bg-[#080617] mt-24 animate-gradient">
-      <Heading
-        title="Portfolio"
-        description="Strategically Crafted Branded Signature Edits Uniquely Designed for Our Partners and Their Audiences"
-      />
+    <div className="bg-[#080617] ">
+      <div className="animate-gradient h-[200vh] pt-40" >
+        <Heading
+          title="Portfolio"
+          description="Strategically Crafted Branded Signature Edits Uniquely Designed for Our Partners and Their Audiences"
+        />
+      </div>
       <div className="flex justify-center items-center py-32 ">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {testimonials.map((testimonial) => (
-            <TestimonialVideoCard
-              key={testimonial.id}
-              name={testimonial.name}
-              designation={testimonial.designation}
-              profileImage={testimonial.profileImage}
-              videoUrl={testimonial.videoUrl}
-            />
-          ))}
-        </div>
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-[-1000px]">
+        {testimonials.map((testimonial) => (
+          <TestimonialVideoCard
+            key={testimonial.id}
+            name={testimonial.name}
+            designation={testimonial.designation}
+            profileImage={testimonial.profileImage}
+            videoUrl={testimonial.videoUrl}
+          />
+        ))}
+      </div>
       </div>
     </div>
   );

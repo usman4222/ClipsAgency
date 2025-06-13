@@ -1,63 +1,66 @@
-
 @import "tailwindcss";
 
 @keyframes pulseGradient {
-    0% {
-      background: radial-gradient(circle 15% at center, #A75CBD, #080617) !important;
-    }
-    50% {
-      background: radial-gradient(circle 25% at center, #A75CBD, #080617) !important;
-    }
-    100% {
-      background: radial-gradient(circle 15% at center, #A75CBD, #080617) !important;
-    }
+  0% {
+    background: radial-gradient(circle 15% at center, #A75CBD, #080617) !important;
   }
-  
-  .hero-section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-size: cover;
-    animation: pulseGradient 2s infinite ease-in-out;
+
+  50% {
+    background: radial-gradient(circle 25% at center, #A75CBD, #080617) !important;
   }
-  
+
+  100% {
+    background: radial-gradient(circle 15% at center, #A75CBD, #080617) !important;
+  }
+}
+
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  animation: pulseGradient 2s infinite ease-in-out;
+}
 
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); 
-    }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .carousel-items {
-    display: flex;
-    animation: scroll 20s linear infinite;
+
+  100% {
+    transform: translateX(-50%);
   }
-  
-  .carousel-items.pause-animation {
-    animation-play-state: paused;
-  }
-  
+}
+
+.carousel-items {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-items.pause-animation {
+  animation-play-state: paused;
+}
+
+.carousel-focus {
+  flex: 0 0 auto;
+}
+
+@media (min-width: 320px) {
   .carousel-focus {
-    flex: 0 0 auto;
+    width: 180px;
   }
-  @media (min-width: 320px) { 
-    .carousel-focus {
-      width: 180px;
-    }
-  }
+}
 
-  @media (min-width: 768px) { 
-    .carousel-focus {
-      width: 270px;
-    }
+@media (min-width: 768px) {
+  .carousel-focus {
+    width: 270px;
   }
+}
 
 
 @keyframes gradientAnimation {
@@ -65,10 +68,12 @@
     background-size: 100% 100%;
     background-position: center;
   }
+
   50% {
     background-size: 150% 150%;
     background-position: center;
   }
+
   100% {
     background-size: 100% 100%;
     background-position: center;
@@ -86,6 +91,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -93,4 +99,20 @@
 
 .animate-fadeIn {
   animation: fadeIn 2s ease-in forwards;
+}
+
+
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(165, 90, 189, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 30px 15px rgba(165, 90, 189, 0.8);
+  }
+
+  100% {
+    box-shadow: 0 0 10px 5px rgba(165, 90, 189, 0.4);
+  }
 }

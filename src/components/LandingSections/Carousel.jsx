@@ -10,6 +10,14 @@ const Carousel = () => {
     'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b70411982de8ef1a7dad9_Dr-Diana%20-%20Treat%20your%20toothbrush%20as%20a%20VIP%20Tool.gif',
     'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b70343552187b99f54164_Dr%20Medhat-%20Signs%20of%20Toungue%20Tie.gif',
     'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b78476188322f33779499_Sumaya.gif',
+    'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b7867aba77299709fc7fa_Svenja.gif',
+    'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b7153f2cc4ec8df51ef70_Ninad%20-%20The%20Healthy%20Office.gif',
+    'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b6fe0639f18a8d6073fb2_Ajmal%20Perfumes%20-Processing%20techniques%20of%20Oud.gif',
+    'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b70a8f013b880e870e41f_Dr%20Vivien%20-%20History%20of%20Plastic%20Surgery.gif',
+    'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b781fb59f6f8d368492ac_Rafif.gif',
+    'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b6ff7723d51118aedc820_Carine%20Boury%20-%20%20Why%20employees%20fighting%20a%20good%20sign.gif',
+    'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b71a2f2cc4ec8df5236e5_Steve%20Hill%20-%20when%20you%20hear%20dubai.gif',
+    'https://cdn.prod.website-files.com/67025756be96d71592e4ec86/672b782c827be802385c54fb_Rakan.gif'
   ];
 
   return (

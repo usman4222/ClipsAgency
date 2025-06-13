@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Heading } from "../Heading";
-import SuccessStoriesCarousel from "./SuccessStoriesCarousel";
+import SuccessStoriesCarousel from "./SuccessStoriesCards";
 import { Link } from "react-router-dom";
 import CustomCarousel from "../../pages/CustomCarousel";
 

@@ -78,12 +78,12 @@ const PricingTable = () => {
 
       {/* MODAL */}
       {selectedPlan && (
-        <div className="fixed inset-0 bg-transparent/30 backdrop-blur-sm bg-opacity-60 flex justify-center items-center p-4">
+        <div className="fixed inset-0 bg-transparent/30 backdrop-blur-sm bg-opacity-60 flex justify-center items-center p-4 z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="bg-white rounded-lg shadow-lg w-full h-[200px] md:h-auto md:max-w-3xl p-6 relative"
+            className="bg-white rounded-lg shadow-lg w-full h-[200px] md:h-auto md:max-w-3xl mt-24 p-6 relative z-auto"
           >
             <button
               className="absolute top-4 right-4 text-gray-700 hover:text-black cursor-pointer"

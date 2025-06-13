@@ -26,7 +26,6 @@ function App() {
         <Route path="/credits" element={<Credits />} />
         <Route path="/ghosthost" element={<GhostHost />} />
         <Route path="/careers" element={<Careers />} />
-
       </Routes>
       <Footer/>
     </>
